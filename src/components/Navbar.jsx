@@ -10,7 +10,12 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
-      <img className="w-44 cursor-pointer" src={assets.logo} alt="" />
+      <img
+        onClick={() => navigate("/")}
+        className="w-44 cursor-pointer"
+        src={assets.logo}
+        alt=""
+      />
 
       {/* the Navbar is not working for small screen */}
       <ul className="md:flex flex items-start gap-5 font-medium">
@@ -54,10 +59,14 @@ const Navbar = () => {
                   onClick={() => navigate("/my-appointments")}
                   className="hover:text-black cursor-pointer"
                 >
-              
                   My Appointments
                 </p>
-                <p onClick={() => setToken(false)}  className="hover:text-black cursor-pointer">Logout</p>
+                <p
+                  onClick={() => setToken(false)}
+                  className="hover:text-black cursor-pointer"
+                >
+                  Logout
+                </p>
               </div>
             </div>
           </div>

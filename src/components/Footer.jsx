@@ -20,8 +20,8 @@ const Footer = () => {
 
         {/* -----------center------- */}
         <div>
-          <p className="text-xl">COMPANY</p>
-          <ul>
+          <p className="text-xl font-medium mb-5">COMPANY</p>
+          <ul className="flex flex-col gap-2 text-gray-600">
             <li>Home</li>
             <li>About us</li>
             <li>Contact us</li>
@@ -30,8 +30,8 @@ const Footer = () => {
         </div>
         {/* ---------right---------- */}
         <div>
-          <p>GET IN TOUCH</p>
-          <ul>
+          <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
+          <ul className="flex flex-col gap-2 text-gray-600">
             <li>+9198974874</li>
             <li>quickCure18@gmail.com</li>
           </ul>
@@ -41,7 +41,7 @@ const Footer = () => {
       {/* -------Copyright text--------- */}
       <div>
         <hr />
-        <p>Copyright 2025@ QuickCure - All Right Reserved.</p>
+        <p className="py-5 text-sm text-center">Copyright 2025@ QuickCure - All Right Reserved.</p>
       </div>
     </div>
   );
